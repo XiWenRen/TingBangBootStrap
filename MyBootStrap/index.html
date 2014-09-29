@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+
+		<!-- 新 Bootstrap 核心 CSS 文件 -->
+		<link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.2.0/css/bootstrap.min.css">
+
+		<!-- 可选的Bootstrap主题文件（一般不用引入） -->
+		<link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+
+		<style>
+		#myScrollspy{
+			z-index: 2000;
+			top: 30%;
+			zoom: 1;
+			background-color: rgba(180,180,180,0.4);
+			border-radius: 5px;
+		}
+			#MyCollapse{
+				background-image: none;
+				background-color: #000000;
+				border-radius: 0px;
+			}
+			#MyCollapseFather{
+				margin-bottom: 0px;
+			}
+			
+			.projectImg{
+				height: 140px;
+				width: 140px;
+			}
+			
+			.col-md-4{
+				text-align:center;
+			}
+			
+			#products{
+				min-height: 600px;
+				background-color: rgba(50,50,50,0.4);
+			}
+			
+			#friends{
+				background-color: rgba(200,200,200,0.4);
+				min-height: 600px;
+			}
+			
+			#about{
+				min-height: 600px;
+				background-color: rgba(200,200,200,0.4);
+			}
+			
+			.col-md-4{
+				margin-top: 100px;
+			}
+			
+			.friend{
+				border-radius: 50%;
+				background-color: rgba(125,125,231,0.6);
+				height: 160px;
+				width: 160px;
+				margin: 0 auto;
+				vertical-align: middle;
+				box-shadow: 5px 0px 20px rgba(30,30,30,0.8);
+			}
+			
+		</style>
+	</head>
+
+	<body>
+            <ul class="nav nav-tabs nav-stacked" data-spy="affix" id="myScrollspy">
+                <li><a href="#MyCollapseFather">顶部</a></li>
+                <li><a href="#about">我们是谁</a></li>
+                <li><a href="#products">小试牛刀</a></li>
+                <li><a href="#friends">谁爱我们</a></li>
+            </ul>
+		
+		<nav class="navbar navbar-default" role="navigation" id="MyCollapseFather">
+			<div class="collapse navbar-collapse navbar-fixed-top" id="MyCollapse">
+				<ul class="nav navbar-nav">
+					<li class="active"><a href="#MyCollapse">廷邦</a>
+					</li>
+				</ul>
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="#">SVN</a>
+					</li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+	               Java <b class="caret"></b>
+	            </a>
+						<ul class="dropdown-menu">
+							<li><a href="#">jmeter</a>
+							</li>
+							<li class="divider"></li>
+							<li><a href="#">另一个分离的链接</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</nav>
+			<div class="carousel slide" id="MyCarousel">
+				<ol class="carousel-indicators">
+					<li data-slide-to="0" data-target="#MyCarousel">
+					</li>
+					<li data-slide-to="1" data-target="#MyCarousel" class="active">
+					</li>
+					<li data-slide-to="2" data-target="#MyCarousel">
+					</li>
+				</ol>
+				<div class="carousel-inner">
+					<div class="item">
+						<img alt="" src="img/slide-01.jpg" />
+						<div class="carousel-caption">
+							<h4>
+								
+							</h4>
+							<p>
+								棒球运动是一种以棒打球为主要特点，集体性、对抗性很强的球类运动项目，在美国、日本尤为盛行。
+							</p>
+						</div>
+					</div>
+					<div class="item active">
+						<img alt="" src="img/slide-02.jpg" />
+						<div class="carousel-caption">
+							<h4>
+								冲浪
+							</h4>
+							<p>
+								冲浪是以海浪为动力，利用自身的高超技巧和平衡能力，搏击海浪的一项运动。运动员站立在冲浪板上，或利用腹板、跪板、充气的橡皮垫、划艇、皮艇等驾驭海浪的一项水上运动。
+							</p>
+						</div>
+					</div>
+					<div class="item">
+						<img alt="" src="img/slide-03.jpg" />
+						<div class="carousel-caption">
+							<h4>
+								自行车
+							</h4>
+							<p>
+								以自行车为工具比赛骑行速度的体育运动。1896年第一届奥林匹克运动会上被列为正式比赛项目。环法赛为最著名的世界自行车锦标赛。
+							</p>
+						</div>
+					</div>
+				</div> <a data-slide="prev" href="#MyCarousel" class="left carousel-control"></a> <a data-slide="next" href="#MyCarousel" class="right carousel-control"></a>
+			</div>
+			
+			<div class="container-fluid" id="about">
+				<div class="row">
+					<div class="col-md-12" style="text-align: center;font-size: 56px; padding-top: 50px;">
+						<span>
+							Who-Are-We
+						</span>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-6">
+						
+					</div>
+					<div class="col-md-6" style="text-indent: 50px;text-align: right;padding-right: 50px;">
+						<h3>介绍吧啦吧啦吧啦吧啦吧啦吧啦吧啦吧啦吧啦吧啦吧啦吧啦吧啦吧啦吧啦吧啦吧啦吧啦吧啦吧啦吧啦吧啦吧啦吧啦吧啦吧啦吧啦吧啦</h3>
+					</div>
+				</div>
+			</div>
+			
+	<div class="container-fluid" id="products">
+	<div class="row">
+		<div class="col-md-4">
+			<img alt="140x140" src="img/a.png" class="img-circle projectImg" />
+			<div class="hero-unit well">
+				<h1>
+					项目1
+				</h1>
+				<p>
+					简介。。。
+				</p>
+				<p>
+					<a class="btn btn-primary btn-large" href="#">了解详情  »</a>
+				</p>
+			</div>
+		</div>
+		<div class="col-md-4">
+			<img alt="140x140" src="img/a.png" class="img-circle projectImg" />
+			<div class="hero-unit well">
+				<h1>
+					项目2
+				</h1>
+				<p>
+					简介。。。
+				</p>
+				<p>
+					<a class="btn btn-primary btn-large" href="#">了解详情  »</a>
+				</p>
+			</div>
+		</div>
+		<div class="col-md-4">
+			<img alt="140x140" src="img/a.png" class="img-circle projectImg" />
+			<div class="hero-unit well">
+				<h1>
+					项目3
+				</h1>
+				<p>
+					简介
+				</p>
+				<p>
+					<a class="btn btn-primary btn-large" href="#">了解详情  »</a>
+				</p>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="container-fluid" id="friends">
+	<div class="row">
+		<div class="col-md-4">
+			<div class="friend"></div>
+		</div>
+		<div class="col-md-4">
+			<div class="friend"></div>
+		</div>
+		<div class="col-md-4">
+			<div class="friend"></div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-4">
+			<div class="friend"></div>
+		</div>
+		<div class="col-md-4">
+			<div class="friend"></div>
+		</div>
+		<div class="col-md-4">
+			<div class="friend"></div>
+		</div>
+	</div>
+</div>
+		<div class="container-fluid">
+			<div class="row">
+			<div class="col-md-12" style="text-align: center; background-color: rgba(100,100,100,0.7);">
+				 <address> <strong>Twitter, Inc.</strong><br /> 795 Folsom Ave, Suite 600<br /> San Francisco, CA 94107<br /> <abbr title="Phone">P:</abbr> (123) 456-7890</address>
+			</div>
+			</div>
+		</div>
+		<!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+		<script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+
+		<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+		<script src="http://cdn.bootcss.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+	</body>
+
+</html>
