@@ -23,6 +23,10 @@
 				background-image: none;
 				background-color: #000000;
 				border-radius: 0px;
+				width: 100%;
+			}
+			.carouselImg{
+				width: 100%;
 			}
 			#MyCollapseFather{
 				margin-bottom: 0px;
@@ -64,6 +68,19 @@
 				margin: 0 auto;
 				vertical-align: middle;
 				box-shadow: 5px 0px 20px rgba(30,30,30,0.8);
+			}
+			
+			.myFilppy{
+				-webkit-animation: myRotate 1s;
+			}
+			
+			.myFilppy{
+				-webkit-animation: myRotate 1s;
+			}
+			
+			@-webkit-keyframes myRotate{
+				from{-webkit-transform: rotateY(0deg);}
+				to{-webkit-transform: rotateY(180deg);}
 			}
 			
 		</style>
@@ -112,10 +129,10 @@
 				</ol>
 				<div class="carousel-inner">
 					<div class="item">
-						<img alt="" src="img/slide-01.jpg" />
+						<img alt="" src="img/slide-01.jpg" class="carouselImg" />
 						<div class="carousel-caption">
 							<h4>
-								
+								棒球
 							</h4>
 							<p>
 								棒球运动是一种以棒打球为主要特点，集体性、对抗性很强的球类运动项目，在美国、日本尤为盛行。
@@ -123,7 +140,7 @@
 						</div>
 					</div>
 					<div class="item active">
-						<img alt="" src="img/slide-02.jpg" />
+						<img alt="" src="img/slide-02.jpg" class="carouselImg"/>
 						<div class="carousel-caption">
 							<h4>
 								冲浪
@@ -134,7 +151,7 @@
 						</div>
 					</div>
 					<div class="item">
-						<img alt="" src="img/slide-03.jpg" />
+						<img alt="" src="img/slide-03.jpg" class="carouselImg"/>
 						<div class="carousel-caption">
 							<h4>
 								自行车
@@ -169,7 +186,7 @@
 	<div class="row">
 		<div class="col-md-4">
 			<img alt="140x140" src="img/a.png" class="img-circle projectImg" />
-			<div class="hero-unit well">
+			<div >
 				<h1>
 					项目1
 				</h1>
@@ -183,7 +200,7 @@
 		</div>
 		<div class="col-md-4">
 			<img alt="140x140" src="img/a.png" class="img-circle projectImg" />
-			<div class="hero-unit well">
+			<div >
 				<h1>
 					项目2
 				</h1>
@@ -197,15 +214,15 @@
 		</div>
 		<div class="col-md-4">
 			<img alt="140x140" src="img/a.png" class="img-circle projectImg" />
-			<div class="hero-unit well">
+			<div >
 				<h1>
-					项目3
+					项目2
 				</h1>
 				<p>
-					简介
+					简介。。。
 				</p>
 				<p>
-					<a class="btn btn-primary btn-large" href="#">了解详情  »</a>
+					<a class="btn" href="#" style="border:2px solid rgba(255,255,255,1);color: rgba(255,255,255,1);">了解详情  »</a>
 				</p>
 			</div>
 		</div>
@@ -215,7 +232,7 @@
 <div class="container-fluid" id="friends">
 	<div class="row">
 		<div class="col-md-4">
-			<div class="friend"></div>
+			<div class="friend myFilppy"></div>
 		</div>
 		<div class="col-md-4">
 			<div class="friend"></div>
